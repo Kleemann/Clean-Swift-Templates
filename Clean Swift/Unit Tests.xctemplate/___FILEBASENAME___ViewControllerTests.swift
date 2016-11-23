@@ -10,8 +10,8 @@
 import XCTest
 
 class ___FILEBASENAMEASIDENTIFIER___ViewControllerTests: XCTestCase {
-    
     // MARK: - Subject under test
+    
     var sut: ___FILEBASENAMEASIDENTIFIER___ViewController!
     var window: UIWindow!
     

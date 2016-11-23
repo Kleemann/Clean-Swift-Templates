@@ -10,8 +10,8 @@
 import XCTest
 
 class ___FILEBASENAMEASIDENTIFIER___InteractorTests: XCTestCase {
-    
     // MARK: - Subject under test
+    
     var sut: ___FILEBASENAMEASIDENTIFIER___Interactor!
     
     // MARK: - Test lifecycle
@@ -30,6 +30,8 @@ class ___FILEBASENAMEASIDENTIFIER___InteractorTests: XCTestCase {
     func setup___FILEBASENAMEASIDENTIFIER___Interactor() {
         sut = ___FILEBASENAMEASIDENTIFIER___Interactor()
     }
+    
+    // MARK: - Test doubles
     
     // MARK: - Tests
     
