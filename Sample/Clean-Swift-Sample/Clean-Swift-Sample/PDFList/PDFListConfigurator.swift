@@ -9,8 +9,6 @@
 
 import UIKit
 
-// MARK: Connect View, Interactor, and Presenter
-
 extension PDFListViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
