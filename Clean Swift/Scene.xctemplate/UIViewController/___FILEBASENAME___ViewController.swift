@@ -36,8 +36,6 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController,  ___FILEBA
     // MARK: Event handling
     
     func doSomethingOnLoad() {
-        // NOTE: Ask the Interactor to do some work
-        
         let request = ___FILEBASENAMEASIDENTIFIER___Request()
         output.doSomething(request: request)
     }
@@ -46,7 +44,5 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController,  ___FILEBA
     
     func displaySomething(viewModel: ___FILEBASENAMEASIDENTIFIER___ViewModel) {
         // NOTE: Display the result from the Presenter
-        
-        // nameTextField.text = viewModel.name
     }
 }

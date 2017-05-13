@@ -9,15 +9,6 @@
 
 import UIKit
 
-// MARK: Connect View, Interactor, and Presenter
-
-extension ___FILEBASENAMEASIDENTIFIER___ViewController {
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        router.passDataToNextScene(segue: segue)
-    }
-}
-
 class ___FILEBASENAMEASIDENTIFIER___Configurator {
     // MARK: Object lifecycle
     static let sharedInstance = ___FILEBASENAMEASIDENTIFIER___Configurator()
