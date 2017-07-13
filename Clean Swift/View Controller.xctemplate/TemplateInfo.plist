@@ -76,7 +76,7 @@
 		<string>com.apple.platform.iphoneos</string>
   </array>
 	<key>SortOrder</key>
-	<string>8</string>
+	<string>1</string>
   <key>Summary</key>
   <string>This generates a new view controller using Uncle Bob's clean architecture. Your view/view controller logic goes here.</string>
 </dict>

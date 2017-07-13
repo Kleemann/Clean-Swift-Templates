@@ -160,7 +160,7 @@
 		<string>com.apple.platform.iphoneos</string>
   </array>
 	<key>SortOrder</key>
-	<string>9</string>
+	<string>0</string>
   <key>Summary</key>
   <string>This generates a new scene using Uncle Bob's clean architecture.</string>
 </dict>

@@ -6,14 +6,14 @@ SNIPPETS_DIR=Snippets
 
 install:install_templates install_snippets
 	@echo "Install Done"
+	@echo "Restart Xcode to see changes!"
 
 
 install_snippets:
 	@mkdir -p $(XCODE_USER_SNIPPETS_DIR)
 	@rm -fR $(XCODE_USER_SNIPPETS_DIR)/$(SNIPPETS_PREFIX)
 	@cp $(SNIPPETS_DIR)/* $(XCODE_USER_SNIPPETS_DIR)
-	@echo "Restart Xcode to see changes!"
-
+	
 install_templates:
 	mkdir -p $(XCODE_USER_TEMPLATES_DIR)
 	rm -fR $(XCODE_USER_TEMPLATES_DIR)/$(TEMPLATES_DIR)

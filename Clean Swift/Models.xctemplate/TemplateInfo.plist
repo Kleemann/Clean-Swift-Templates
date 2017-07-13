@@ -38,7 +38,7 @@
 		<string>com.apple.platform.iphoneos</string>
   </array>
 	<key>SortOrder</key>
-	<string>3</string>
+	<string>4</string>
   <key>Summary</key>
   <string>This generates a new set of boundary models between the view controller, interactor, presenter, and router using Uncle Bob's clean architecture.</string>
 </dict>

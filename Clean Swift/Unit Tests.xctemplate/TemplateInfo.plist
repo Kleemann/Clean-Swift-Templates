@@ -74,13 +74,27 @@
 			<key>Type</key>
 			<string>static</string>
     </dict>
+    <dict>
+			<key>Default</key>
+			<string>___VARIABLE_sceneName:identifier___WorkerTests</string>
+			<key>Description</key>
+			<string>The worker tests name</string>
+			<key>Identifier</key>
+			<string>workerTestsName</string>
+			<key>Name</key>
+			<string>Worker Tests Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+    </dict>
   </array>
   <key>Platforms</key>
   <array>
 		<string>com.apple.platform.iphoneos</string>
   </array>
 	<key>SortOrder</key>
-	<string>1</string>
+	<string>7</string>
   <key>Summary</key>
   <string>This generates unit tests for your scene using Uncle Bob's clean architecture.</string>
 </dict>
