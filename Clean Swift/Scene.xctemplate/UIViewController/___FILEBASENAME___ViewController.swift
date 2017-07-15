@@ -49,12 +49,14 @@ class ___VARIABLE_sceneName___ViewController: UIViewController, ___VARIABLE_scen
         doSomething()
     }
     
-    // MARK: Do something
+    // MARK: Event handling
     
     func doSomething() {
         let request = ___VARIABLE_sceneName___.Something.Request()
         interactor?.doSomething(request: request)
     }
+    
+    // MARK: Display logic
     
     func displaySomething(viewModel: ___VARIABLE_sceneName___.Something.ViewModel) {
         //nameTextField.text = viewModel.name
