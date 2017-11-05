@@ -14,13 +14,12 @@ protocol ___VARIABLE_sceneName___BusinessLogic {
 
 class ___VARIABLE_sceneName___Interactor: ___VARIABLE_sceneName___BusinessLogic {
     var presenter: ___VARIABLE_sceneName___PresentationLogic?
-    var worker: ___VARIABLE_sceneName___Worker?
+    lazy var worker = ___VARIABLE_sceneName___Worker()
     
     // MARK: Business logic
     
     func doSomething(request: ___VARIABLE_sceneName___.Something.Request) {
-        worker = ___VARIABLE_sceneName___Worker()
-        worker?.doSomeWork()
+        worker.doSomeWork()
         
         let response = ___VARIABLE_sceneName___.Something.Response()
         presenter?.presentSomething(response: response)
