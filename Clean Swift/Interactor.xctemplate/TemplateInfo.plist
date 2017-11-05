@@ -52,7 +52,7 @@
 		<string>com.apple.platform.iphoneos</string>
   </array>
 	<key>SortOrder</key>
-	<string>7</string>
+	<string>2</string>
   <key>Summary</key>
   <string>This generates a new interactor using Uncle Bob's clean architecture. Your business logic goes here.</string>
 </dict>

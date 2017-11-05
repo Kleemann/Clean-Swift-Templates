@@ -52,7 +52,7 @@
 		<string>com.apple.platform.iphoneos</string>
   </array>
 	<key>SortOrder</key>
-	<string>6</string>
+	<string>3</string>
   <key>Summary</key>
   <string>This generates a new presenter using Uncle Bob's clean architecture. Your presentation logic goes here.</string>
 </dict>
