@@ -42,12 +42,19 @@ class ___VARIABLE_sceneName___ViewController: UITableViewController, ___VARIABLE
         router.viewController = viewController
     }
     
+    // MARK: Configuration
+    private func configure() {
+        
+    }
+    
     // MARK: View lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         doSomething()
+        configure()
     }
+    
     
     // MARK: Event handling
     

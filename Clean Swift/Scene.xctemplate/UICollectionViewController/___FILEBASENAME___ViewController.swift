@@ -42,11 +42,17 @@ class ___VARIABLE_sceneName___ViewController: UICollectionViewController, ___VAR
         router.viewController = viewController
     }
     
+    // MARK: Configuration
+    private func configure() {
+        
+    }
+    
     // MARK: View lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         doSomething()
+        configure()
     }
     
     // MARK: Event handling

@@ -14,7 +14,7 @@ protocol ___VARIABLE_sceneName___BusinessLogic {
 
 class ___VARIABLE_sceneName___Interactor: ___VARIABLE_sceneName___BusinessLogic {
     var presenter: ___VARIABLE_sceneName___PresentationLogic?
-    lazy var worker = ___VARIABLE_sceneName___Worker()
+    fileprivate lazy var worker = ___VARIABLE_sceneName___Worker()
     
     // MARK: Business logic
     
