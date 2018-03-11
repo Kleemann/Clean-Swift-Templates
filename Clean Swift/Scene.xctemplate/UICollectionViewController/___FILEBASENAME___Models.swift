@@ -8,11 +8,15 @@
 
 import UIKit
 
-struct ___FILEBASENAMEASIDENTIFIER___Request {
-}
-
-struct ___FILEBASENAMEASIDENTIFIER___Response {
-}
-
-struct ___FILEBASENAMEASIDENTIFIER___ViewModel {
+enum ___VARIABLE_sceneName___ {
+    // MARK: Use cases
+    
+    enum Something {
+        struct Request {
+        }
+        struct Response {
+        }
+        struct ViewModel {
+        }
+    }
 }

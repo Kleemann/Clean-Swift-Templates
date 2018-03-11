@@ -8,19 +8,17 @@
 
 import UIKit
 
-protocol ___FILEBASENAMEASIDENTIFIER___PresenterOutput: class {
-    func displaySomething(viewModel: ___FILEBASENAMEASIDENTIFIER___ViewModel)
+protocol ___VARIABLE_sceneName___PresentationLogic {
+    func presentSomething(response: ___VARIABLE_sceneName___.Something.Response)
 }
 
-class ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___InteractorOutput {
-    weak var output: ___FILEBASENAMEASIDENTIFIER___PresenterOutput!
+class ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___PresentationLogic {
+    weak var viewController: ___VARIABLE_sceneName___DisplayLogic?
     
     // MARK: Presentation logic
     
-    func presentSomething(response: ___FILEBASENAMEASIDENTIFIER___Response) {
-        // NOTE: Format the response from the Interactor and pass the result back to the View Controller
-        
-        let viewModel = ___FILEBASENAMEASIDENTIFIER___ViewModel()
-        output.displaySomething(viewModel: viewModel)
+    func presentSomething(response: ___VARIABLE_sceneName___.Something.Response) {
+        let viewModel = ___VARIABLE_sceneName___.Something.ViewModel()
+        viewController?.displaySomething(viewModel: viewModel)
     }
 }

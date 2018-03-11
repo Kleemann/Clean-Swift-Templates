@@ -8,42 +8,57 @@
 
 import UIKit
 
-protocol ___FILEBASENAMEASIDENTIFIER___ViewControllerOutput {
-    func doSomething(request: ___FILEBASENAMEASIDENTIFIER___Request)
+protocol ___VARIABLE_sceneName___DisplayLogic: class {
+    func displaySomething(viewModel: ___VARIABLE_sceneName___.Something.ViewModel)
 }
 
-class ___FILEBASENAMEASIDENTIFIER___ViewController: UITableViewController,  ___FILEBASENAMEASIDENTIFIER___PresenterOutput {
-    var output: ___FILEBASENAMEASIDENTIFIER___ViewControllerOutput!
-    var router: ___FILEBASENAMEASIDENTIFIER___Router!
+class ___VARIABLE_sceneName___ViewController: UITableViewController, ___VARIABLE_sceneName___DisplayLogic {
+    var interactor: ___VARIABLE_sceneName___BusinessLogic?
+    var router: ___VARIABLE_sceneName___RoutingLogic?
     
     // MARK: Object lifecycle
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        ___FILEBASENAMEASIDENTIFIER___Configurator.sharedInstance.configure(self)
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        setup()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setup()
+    }
+    
+    // MARK: Setup
+    
+    private func setup() {
+        let viewController = self
+        let interactor = ___VARIABLE_sceneName___Interactor()
+        let presenter = ___VARIABLE_sceneName___Presenter()
+        let router = ___VARIABLE_sceneName___Router()
+        viewController.interactor = interactor
+        viewController.router = router
+        interactor.presenter = presenter
+        presenter.viewController = viewController
+        router.viewController = viewController
     }
     
     // MARK: View lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        doSomethingOnLoad()
+        doSomething()
     }
     
     // MARK: Event handling
     
-    func doSomethingOnLoad() {
-        // NOTE: Ask the Interactor to do some work
-        
-        let request = ___FILEBASENAMEASIDENTIFIER___Request()
-        output.doSomething(request)
+    func doSomething() {
+        let request = ___VARIABLE_sceneName___.Something.Request()
+        interactor?.doSomething(request: request)
     }
     
     // MARK: Display logic
     
-    func displaySomething(viewModel: ___FILEBASENAMEASIDENTIFIER___ViewModel) {
-        // NOTE: Display the result from the Presenter
-        
-        // nameTextField.text = viewModel.name
+    func displaySomething(viewModel: ___VARIABLE_sceneName___.Something.ViewModel) {
+        //nameTextField.text = viewModel.name
     }
 }

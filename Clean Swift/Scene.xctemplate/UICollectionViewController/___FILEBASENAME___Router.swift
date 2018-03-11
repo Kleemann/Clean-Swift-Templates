@@ -8,47 +8,27 @@
 
 import UIKit
 
-protocol ___FILEBASENAMEASIDENTIFIER___RouterInput {
-    func navigateToSomewhere()
+protocol ___VARIABLE_sceneName___RoutingLogic {
+    //func routeToSomewhere(segue: UIStoryboardSegue?)
 }
 
-class ___FILEBASENAMEASIDENTIFIER___Router: ___FILEBASENAMEASIDENTIFIER___RouterInput {
-    weak var viewController: ___FILEBASENAMEASIDENTIFIER___ViewController!
+class ___VARIABLE_sceneName___Router: NSObject, ___VARIABLE_sceneName___RoutingLogic {
+    weak var viewController: ___VARIABLE_sceneName___ViewController?
     
-    // MARK: Navigation
+    // MARK: Routing
     
-    func navigateToSomewhere() {
-        // NOTE: Teach the router how to navigate to another scene. Some examples follow:
-        
-        // 1. Trigger a storyboard segue
-        // viewController.performSegueWithIdentifier("ShowSomewhereScene", sender: nil)
-        
-        // 2. Present another view controller programmatically
-        // viewController.presentViewController(someWhereViewController, animated: true, completion: nil)
-        
-        // 3. Ask the navigation controller to push another view controller onto the stack
-        // viewController.navigationController?.pushViewController(someWhereViewController, animated: true)
-        
-        // 4. Present a view controller from a different storyboard
-        // let storyboard = UIStoryboard(name: "OtherThanMain", bundle: nil)
-        // let someWhereViewController = storyboard.instantiateInitialViewController() as! SomeWhereViewController
-        // viewController.navigationController?.pushViewController(someWhereViewController, animated: true)
-    }
-    
-    // MARK: Communication
-    
-    func passDataToNextScene(segue: UIStoryboardSegue) {
-        // NOTE: Teach the router which scenes it can communicate with
-        
-        if segue.identifier == "ShowSomewhereScene" {
-            passDataToSomewhereScene(segue: segue)
-        }
-    }
-    
-    func passDataToSomewhereScene(segue: UIStoryboardSegue) {
-        // NOTE: Teach the router how to pass data to the next scene
-        
-        // let someWhereViewController = segue.destinationViewController as! SomeWhereViewController
-        // someWhereViewController.output.name = viewController.output.name
-    }
+    //func routeToSomewhere(segue: UIStoryboardSegue?)
+    //{
+    //  if let segue = segue {
+    //    let destinationVC = segue.destination as! SomewhereViewController
+    //    var destinationDS = destinationVC.router!.dataStore!
+    //    passDataToSomewhere(source: dataStore!, destination: &destinationDS)
+    //  } else {
+    //    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    //    let destinationVC = storyboard.instantiateViewController(withIdentifier: "SomewhereViewController") as! SomewhereViewController
+    //    var destinationDS = destinationVC.router!.dataStore!
+    //    passDataToSomewhere(source: dataStore!, destination: &destinationDS)
+    //    navigateToSomewhere(source: viewController!, destination: destinationVC)
+    //  }
+    //}
 }

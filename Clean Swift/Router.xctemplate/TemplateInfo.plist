@@ -52,7 +52,7 @@
 		<string>com.apple.platform.iphoneos</string>
   </array>
 	<key>SortOrder</key>
-	<string>5</string>
+	<string>6</string>
   <key>Summary</key>
   <string>This generates a new router using Uncle Bob's clean architecture. You navigate to other scenes by presenting and dismissing other view controllers here.</string>
 </dict>

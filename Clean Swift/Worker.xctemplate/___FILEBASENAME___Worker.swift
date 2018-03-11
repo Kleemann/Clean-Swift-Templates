@@ -8,10 +8,7 @@
 
 import UIKit
 
-class ___FILEBASENAMEASIDENTIFIER___Worker {
-  // MARK: Business Logic
-  
+class ___VARIABLE_sceneName___Worker {
   func doSomeWork() {
-    // NOTE: Do the work
   }
 }
